@@ -1,0 +1,9 @@
+name: My First Action
+on: [push]
+jobs:
+  my_first_job:
+    runs_on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Say hello
+      run: echo "hello world!"
